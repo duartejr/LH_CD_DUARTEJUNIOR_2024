@@ -1,0 +1,77 @@
+# Desafio de Ciência de Dados da Indicium - 2024
+
+Este projeto é uma solução para o desafio de Ciência de Dados do programa Lighthouse - 2024 da Indicium. O objetivo deste projeto é apresentar uma solução para análise de um banco de dados de um estúdio chamado PProductions. A análise visa orientar a direção do estúdio na tomada de decisão sobre qual segmento deve investir. Também inclui a criação de modelos de machine learning para avaliação dos filmes segundo os critérios apresentados.
+
+## Configuração do Ambiente
+
+Para replicar este projeto em seu ambiente local, você pode criar um ambiente Conda com todas as dependências necessárias listadas no arquivo `requirements.txt`. 
+
+### Criar e Ativar o Ambiente Conda
+
+```bash
+conda env create -f requirements.txt
+conda activate my_ml_env
+```
+
+Substitua `my_ml_env` pelo nome do ambiente Conda que você deseja usar.
+
+### Instalação Manual das Dependências
+
+Se preferir instalar manualmente, aqui estão as principais bibliotecas necessárias:
+
+- NumPy
+- Pandas
+- Scikit-learn
+- XGBoost
+- Joblib
+- Matplotlib
+- Seaborn
+
+Instale-as usando o pip:
+
+```bash
+pip install numpy pandas scikit-learn xgboost joblib matplotlib seaborn
+```
+
+## Descrição do Projeto
+
+Este projeto inclui notebooks que demonstram:
+
+- Preprocessamento de dados usando Pandas e Scikit-learn.
+- Construção de pipelines de machine learning com pré-processamento e modelagem.
+- Ajuste de hiperparâmetros usando Randomized Search.
+- Avaliação de modelos usando métricas como Mean Absolute Error (MAE).
+- Exportação e importação de modelos treinados usando Joblib.
+- Exemplo de uso do modelo para a previsão da nota de avaliação de um filme.
+
+## Como Usar
+
+1. **Preparação dos Dados:**
+   - Coloque seus dados em um formato compatível (por exemplo, CSV) no diretório do projeto.
+
+2. **Execução dos Notebooks:**
+   - Execute o notebook Jupyter fornecido para ver exemplos de pré-processamento, modelagem e avaliação.
+
+## Estrutura de Arquivos
+
+```
+project/
+│
+├── desafio_indicium_imdb          # Exemplo de conjunto de dados
+│
+├── LH_CD_DUARTEJUNIOR.ipynb       # Notebook Jupyter com exemplos
+│
+├── modelo_notas_imdb_indicium.pkl # Arquivo binário com o modelo criado
+│
+├── requirements.txt               # Arquivo de configuração do ambiente Conda
+│
+└── README.md                      # Este arquivo
+```
+
+## Contribuição
+
+Sinta-se à vontade para enviar pull requests e propor melhorias. Qualquer contribuição é bem-vinda!
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
